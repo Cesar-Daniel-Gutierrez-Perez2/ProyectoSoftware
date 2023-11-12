@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [DBVENTA]    Script Date: 9/11/2023 9:50:48 p. m. ******/
+/****** Object:  Database [DBVENTA]    Script Date: 12/11/2023 6:51:27 p. m. ******/
 CREATE DATABASE [DBVENTA]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -82,7 +82,7 @@ ALTER DATABASE [DBVENTA] SET QUERY_STORE (OPERATION_MODE = READ_WRITE, CLEANUP_P
 GO
 USE [DBVENTA]
 GO
-/****** Object:  Table [dbo].[Categoria]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  Table [dbo].[Categoria]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -98,7 +98,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Configuracion]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  Table [dbo].[Configuracion]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -109,7 +109,7 @@ CREATE TABLE [dbo].[Configuracion](
 	[valor] [varchar](60) NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[DetalleVenta]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  Table [dbo].[DetalleVenta]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -130,7 +130,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Menu]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  Table [dbo].[Menu]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -150,7 +150,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Negocio]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  Table [dbo].[Negocio]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -172,7 +172,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[NumeroCorrelativo]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  Table [dbo].[NumeroCorrelativo]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -189,7 +189,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Producto]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  Table [dbo].[Producto]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -212,7 +212,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Rol]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  Table [dbo].[Rol]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -228,7 +228,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RolMenu]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  Table [dbo].[RolMenu]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -245,7 +245,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TipoDocumentoVenta]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  Table [dbo].[TipoDocumentoVenta]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -261,7 +261,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Usuario]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  Table [dbo].[Usuario]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -283,7 +283,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Venta]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  Table [dbo].[Venta]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -379,7 +379,7 @@ INSERT [dbo].[Menu] ([idMenu], [descripcion], [idMenuPadre], [icono], [controlad
 GO
 SET IDENTITY_INSERT [dbo].[Menu] OFF
 GO
-INSERT [dbo].[Negocio] ([idNegocio], [urlLogo], [nombreLogo], [numeroDocumento], [nombre], [correo], [direccion], [telefono], [porcentajeImpuesto], [simboloMoneda]) VALUES (1, N'https://firebasestorage.googleapis.com/v0/b/psoftware-16cdd.appspot.com/o/IMAGENES_LOGO%2Ffe4115abf9bd4c8bbd9beb3c7709ada7.jpeg?alt=media&token=705f2d5d-f732-4f24-89da-13146e5cabd6', N'fe4115abf9bd4c8bbd9beb3c7709ada7.jpeg', N'123456789', N'Hola', N'codigo@example.com', N'Local', N'142345325', CAST(19.00 AS Decimal(10, 2)), N'$')
+INSERT [dbo].[Negocio] ([idNegocio], [urlLogo], [nombreLogo], [numeroDocumento], [nombre], [correo], [direccion], [telefono], [porcentajeImpuesto], [simboloMoneda]) VALUES (1, N'https://firebasestorage.googleapis.com/v0/b/psoftware-16cdd.appspot.com/o/IMAGENES_LOGO%2Ffe4115abf9bd4c8bbd9beb3c7709ada7.jpeg?alt=media&token=6ccbf308-5326-46b1-8215-f239eb374f69', N'fe4115abf9bd4c8bbd9beb3c7709ada7.jpeg', N'123456789', N'Hola', N'codigo@example.com', N'Local', N'142345325', CAST(19.00 AS Decimal(10, 2)), N'$')
 GO
 SET IDENTITY_INSERT [dbo].[NumeroCorrelativo] ON 
 GO
@@ -497,7 +497,7 @@ GO
 ALTER TABLE [dbo].[Venta]  WITH CHECK ADD FOREIGN KEY([idUsuario])
 REFERENCES [dbo].[Usuario] ([idUsuario])
 GO
-/****** Object:  StoredProcedure [dbo].[sp_InsertarProducto]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[sp_InsertarProducto]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -514,7 +514,7 @@ END
 EXEC sp_InsertarProducto '1234567890'; 
 
 GO
-/****** Object:  StoredProcedure [dbo].[sp_InsertarRol]    Script Date: 9/11/2023 9:50:49 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[sp_InsertarRol]    Script Date: 12/11/2023 6:51:28 p. m. ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
